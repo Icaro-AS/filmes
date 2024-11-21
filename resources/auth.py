@@ -1,7 +1,7 @@
 from flask import Response, request
 from flask_jwt_extended import create_access_token
 from database.models import User 
-from flask_restplus import Resource
+from flask_restx import Resource
 import datetime
 from mongoengine.errors import FieldDoesNotExist, NotUniqueError, DoesNotExist
 import resources.errors as errors

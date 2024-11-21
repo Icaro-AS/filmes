@@ -1,7 +1,7 @@
 import flask.scaffold
 flask.helpers._endpoint_from_view_func = flask.scaffold._endpoint_from_view_func
 from flask import Flask
-from flask_restplus import Api
+from flask_restx  import Api
 from flask_bcrypt import Bcrypt
 from database.db import initialize_db 
 from flask_jwt_extended import JWTManager

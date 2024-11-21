@@ -1,7 +1,7 @@
 from flask import request, render_template
 from flask_jwt_extended import create_access_token, decode_token
 from database.models import User
-from flask_restplus import Resource
+from flask_restx import Resource
 import datetime
 from resources.errors import SchemaValidationError, InternalServerError, \
                                 EmailDoesnotExistsError, BadTokenError,ExpiredTokenError

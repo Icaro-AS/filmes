@@ -1,6 +1,6 @@
 from flask import Response, request
 from database.models import Movie, User
-from flask_restplus import Resource,fields
+from flask_restx  import Resource,fields
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from mongoengine.errors import FieldDoesNotExist, NotUniqueError, \
                                 DoesNotExist,ValidationError
